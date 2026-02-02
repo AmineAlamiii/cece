@@ -7,20 +7,20 @@
 <title>For You 🤍</title>
 
 <style>
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 
- body {
+body {
   margin: 0;
   min-height: 100vh;
 
-  background: 
+  background:
     linear-gradient(
       rgba(0,0,0,0.55),
       rgba(0,0,0,0.55)
     ),
-    url("her.jpg") center/cover no-repeat fixed;
+    url("./her.jpg") center/cover no-repeat;
 
   display: flex;
   justify-content: center;
@@ -31,63 +31,67 @@
 
   padding: 20px;
 }
-  .card {
-    width: 100%;
-    max-width: 420px;
-    background: rgba(255, 255, 255, 0.12);
-    padding: clamp(24px, 5vw, 40px);
-    border-radius: 22px;
-    text-align: center;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.45);
-    backdrop-filter: blur(8px);
-  }
 
-  h1 {
-    font-size: clamp(1.8rem, 6vw, 2.3rem);
-    margin-bottom: 12px;
-  }
+/* Glass card */
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255,255,255,0.12);
+  padding: clamp(24px, 5vw, 40px);
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.45);
+  backdrop-filter: blur(8px);
+}
 
-  p {
-    font-size: clamp(1rem, 4vw, 1.15rem);
-    line-height: 1.6;
-  }
+/* Text */
+h1 {
+  font-size: clamp(1.8rem, 6vw, 2.3rem);
+  margin-bottom: 12px;
+}
 
-  .heart {
-    font-size: clamp(2.5rem, 10vw, 3.2rem);
-    margin-bottom: 8px;
-    animation: pulse 1.5s infinite;
-  }
+p {
+  font-size: clamp(1rem, 4vw, 1.15rem);
+  line-height: 1.6;
+}
 
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.35); }
-    100% { transform: scale(1); }
-  }
+.heart {
+  font-size: clamp(2.5rem, 10vw, 3.2rem);
+  margin-bottom: 8px;
+  animation: pulse 1.5s infinite;
+}
 
-  button {
-    margin-top: 22px;
-    padding: 14px 28px;
-    border: none;
-    border-radius: 30px;
-    background: #ff5f7e;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    width: 100%;
-    max-width: 260px;
-    transition: 0.25s;
-  }
+/* Pulse animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
 
-  button:hover {
-    background: #ff2f5e;
-    transform: scale(1.05);
-  }
+button {
+  margin-top: 22px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  background: #ff5f7e;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  max-width: 260px;
+  transition: 0.25s;
+}
 
-  #message {
-    display: none;
-    margin-top: 22px;
-    font-size: clamp(1.05rem, 4vw, 1.25rem);
-  }
+button:hover {
+  background: #ff2f5e;
+  transform: scale(1.05);
+}
+
+#message {
+  display: none;
+  margin-top: 22px;
+  font-size: clamp(1.05rem, 4vw, 1.25rem);
+}
 </style>
 </head>
 
